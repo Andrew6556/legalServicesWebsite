@@ -31,7 +31,10 @@ button:hover{
     color: $clWhite;
     font-size: 40px;
 }
-
+.title-black{
+    font-size: 3.7rem;
+    color: #1A1A1A;
+}
 // input
 input{
     height: 52px;
@@ -570,62 +573,130 @@ input{
 .team {
     color: $clWhite;
     background: #2B2C2D;
-}
-// team header
-.team__header {
-}
-
-.team__header-title {
-    font-size: 3.7rem
-}
-.team__header-link {
-    color: $clOrange;
-    font-size: 1.8rem;
-}
-// team__content
-.team__content {
-}
-
-.team__content-human {
-    display: flex;
-    align-items: center;
-}
-.team__content-human-img{
-    display: flex;
-    justify-content: center;
-    padding: 14px;
-    border: 2px solid #E27B30;
-    border-radius: 100px;
-    margin-right: 4rem;
-}
-.team__content-human-text {
-    & h4{
-        font-size: 3.8rem;
+    // team header
+    &__header {
+        padding-top: 9rem;
+        &-title {
+            margin-bottom: 10rem;
+            font-size: 3.7rem
+        }
+        &-link {
+            color: $clOrange;
+            font-size: 1.8rem;
+        }
     }
-    & p{
-        font-size: 2.8rem;
+    // team__content
+    &__content-item{
+        margin-bottom: 17rem;
+    }
+    &__content-human {
+        display: flex;
+        align-items: center;
+    }
+    &__content-human-img{
+        display: flex;
+        justify-content: center;
+        padding: 14px;
+        border: 2px solid #E27B30;
+        border-radius: 100px;
+        margin-right: 4rem;
+    }
+    &__content-human-img_2{
+        margin-right: 0;
+        margin-left: 4rem;
+    }
+    &__content-human-text {
+        & h4{
+            font-size: 3.8rem;
+        }
+        & p{
+            font-size: 2.8rem;
+        }
+    }
+    
+    &__content-text {
+        width: 45.1rem;
+        & p{
+            font-size: 1.8rem;
+            line-height: 150.9%;
+            margin-bottom: 3rem;
+        }
+    }
+    &__btn {
+        width: 100%;
+        border: 2px solid $clOrange;
+        padding: 1rem 0;
+        font-size: 2.4rem;
+        border-radius: 100px;
+        position: relative;
+        &::after{
+            content:"";
+            position: absolute;
+            padding: 1rem;
+            top:  2rem;
+            right: 1rem;
+            background: url("../img/icons/team/row-left.svg")center no-repeat;
+        }
     }
 }
-
-.team__content-text {
-    width: 45.1rem;
-    & p{
-        font-size: 1.8rem;
-        line-height: 150.9%;
+// value
+.value{
+    padding: 4.5rem 0 6rem 0;
+    &__text{
+        &-inner{
+            margin-bottom: 2rem;
+        }
+        &-attributes{
+            font-size: 2.3rem;
+            text-transform: uppercase;
+            color: #CECECE;
+            margin-bottom: 2rem;
+        }
+        &-sabtitle{
+            font-size: 1.6rem;
+        }
+        &-title{
+            font-size: 2.3rem;
+            text-transform: uppercase;
+        }
+    }
+    
+}
+// work
+.work{
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        // padding-right: ;
+        &-item{
+            font-size: 1.4rem;
+            color: $clOrange;
+            position: relative;
+            &:not(:first-child)::after{
+                content: "";
+                width: 9px;
+                height: 9px;
+                position: absolute;
+                top: 7px;
+                right: -31px;
+                border: 2px solid #C95B26;
+                border-radius: 100px;
+            }
+            &_black{
+                color:#000000 ;
+                &::after{
+                    content: "";
+                    width: 9px;
+                    height: 9px;
+                    position: absolute;
+                    top: 7px;
+                    right: -31px;
+                    border: 2px solid #000000;
+                    border-radius: 100px;
+                }
+            }
+            
+        }
     }
 }
-.team__btn {
-    width: 100%;
-    border: 2px solid $clOrange;
-    padding: 1rem 0;
-    font-size: 2.4rem;
-    border-radius: 100px;
-    &::after{
-        content:"";
-        padding: 10px;
-        margin-left: 30px;
-        background: url("../img/icons/team/row-left.svg") right no-repeat;
-    }
-}
-
 
