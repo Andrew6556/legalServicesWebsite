@@ -1,0 +1,24 @@
+@import "__settingsBasic";
+// block
+
+.decor-orange{
+    color: $clOrange;
+    display: inline-block;
+}
+.title{
+    color: $clWhite;
+    font-size: 40px;
+}
+.title-black{
+    font-size: 3.7rem;
+    color: #1A1A1A;
+}
+.title__white{
+    color: $clWhite;
+    font-size: 1.8rem;
+}
+.btn__black{
+    color: $clWhite;
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+}
