@@ -4,8 +4,6 @@
 html{
     font-size: 10px;
 }
-
-
 // setteings basic
 
 button{
@@ -32,7 +30,6 @@ input{
 // input
 .header {
     background: url("/img/header/main_bg.png") center no-repeat;
-    height: 120vh;
     padding-top: 5rem;
     padding-bottom: 8rem;
     &__top {
@@ -252,9 +249,8 @@ input{
 }
 // price-list
 .price-list{
-    height: 120vh;
     background: #2B2C2D;
-    background: url("../img/price-list/bg.png") no-repeat;
+    background: url("../img/price-list/bg.png") center no-repeat;
     color: $clWhite;
     &__content{
         display: flex;

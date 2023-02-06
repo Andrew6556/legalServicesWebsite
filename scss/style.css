@@ -126,6 +126,7 @@ input {
 
 .header {
   background: url("/img/header/main_bg.png") center no-repeat;
+  height: 120vh;
   padding-top: 5rem;
   padding-bottom: 8rem;
 }
@@ -343,8 +344,9 @@ input {
 }
 
 .price-list {
+  height: 120vh;
   background: #2B2C2D;
-  background: url("../img/price-list/bg.png") center no-repeat;
+  background: url("../img/price-list/bg.png") no-repeat;
   color: #FFFFFF;
 }
 .price-list__content {
